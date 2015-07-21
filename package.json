@@ -1,0 +1,11 @@
+{
+  "name": "happy-steam-scraper",
+  "version": "0.1.0",
+  "description": "A simple Steam profile scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eskild Hustvedt",
+  "license": "GPL-3.0"
+}
