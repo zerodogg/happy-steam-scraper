@@ -25,6 +25,10 @@ module.exports = {
     gamesFromProfile: function (profile,cb)
     {
         var url = 'http://steamcommunity.com/id/'+profile+'/games/?tab=all';
+        if (!/^\D+$/.test(profile))
+        {
+            url = 'http://steamcommunity.com/profiles/'+profile+'/games/?tab=all';
+        }
         httpreq.get(url,function (err, res)
         {
             if(err)
